@@ -85,3 +85,7 @@ TW_NO_EXFAT_FUSE := true
 TW_INCLUDE_NTFS_3G := true
 TARGET_USES_LOGD := true
 #TWRP_INCLUDE_LOGCAT := true
+
+# Vold
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
+
