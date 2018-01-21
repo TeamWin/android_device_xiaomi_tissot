@@ -79,3 +79,4 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 AB_OTA_UPDATER := true
 TWHAVE_SELINUX := true
 TW_NO_EXFAT_FUSE := true
+TW_INCLUDE_NTFS_3G := true
