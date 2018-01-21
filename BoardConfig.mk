@@ -16,6 +16,9 @@
 
 LOCAL_PATH := device/xiaomi/tissot
 
+# Assert
+# TARGET_OTA_ASSERT_DEVICE :=
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -81,3 +84,4 @@ TWHAVE_SELINUX := true
 TW_NO_EXFAT_FUSE := true
 TW_INCLUDE_NTFS_3G := true
 TARGET_USES_LOGD := true
+#TWRP_INCLUDE_LOGCAT := true
