@@ -1,0 +1,11 @@
+# Mount point    FStype            Device                                   Flags
+/boot            emmc             /dev/block/bootdevice/by-name/boot       flags=display="Boot";slotselect
+/system          ext4             /dev/block/bootdevice/by-name/system     flags=display="System";slotselect
+/data	         ext4             /dev/block/bootdevice/by-name/userdata   flags=display="Data";slotselect;length=-16384
+/misc	         emmc             /dev/block/bootdevice/by-name/misc       flags=display="Misc"
+/efs1            emmc             /dev/block/bootdevice/by-name/modemst1   flags=display="EFS";backup=1
+/efs2            emmc             /dev/block/bootdevice/by-name/modemst2   flags=backup=1;subpartitionof=/efs1
+
+/external_sd     auto             /dev/block/mmcblk1p1 /dev/block/mmcblk1  flags=display="Micro SD card";storage;wipeingui;removable;andsec
+/usb-otg         auto             /dev/block/sda1      /dev/block/sda      flags=display="USB-OTG";storage;removable
+
